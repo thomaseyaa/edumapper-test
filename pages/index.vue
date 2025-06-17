@@ -8,7 +8,12 @@
           :items="cardContent.items"
         >
           <template #actions>
-            <UiButton label="Modifier" variant="secondary" size="sm" />
+            <UiButton
+              label="Modifier"
+              variant="secondary"
+              size="sm"
+              @click="navigateToEdumapper"
+            />
           </template>
         </UiSchoolCard>
       </div>
@@ -126,6 +131,10 @@ const formsConfig: (FormConfig & { id: string })[] = [
 /*
  * Event Handlers
  */
+const navigateToEdumapper = () => {
+  window.open("https://www.edumapper.com/auth/signin", "_blank");
+};
+
 const handleFormConfirm = (formId: string, value: FormValue) => {
   console.log(`${formId} confirmé:`, value);
 };

@@ -30,7 +30,12 @@
         </p>
       </div>
 
-      <Icon name="line-md:edit" :size="16" @click="startEditing" />
+      <Icon
+        name="line-md:edit"
+        :size="16"
+        class="cursor-pointer"
+        @click="startEditing"
+      />
     </div>
 
     <!-- Editing State -->
@@ -39,7 +44,12 @@
         <h3 class="text-base font-bold text-black-900">
           {{ main.editTitle }}
         </h3>
-        <Icon name="line-md:close" :size="16" @click="cancelEditing" />
+        <Icon
+          name="line-md:close"
+          :size="16"
+          class="cursor-pointer"
+          @click="cancelEditing"
+        />
       </div>
 
       <!-- Main Section -->
