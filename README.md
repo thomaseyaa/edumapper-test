@@ -2,6 +2,44 @@
 
 School profile form creation test 🎓
 
+## Project Structure
+
+```
+edumapper-test/
+├── app.vue
+├── assets/
+│   ├── css/
+│   │   └── main.css
+│   └── img/
+│       └── logo.svg
+├── components/
+│   ├── layout/
+│   │   └── Header.vue
+│   └── ui/
+│       ├── Button.vue
+│       ├── Checked.vue
+│       ├── Form.vue
+│       └── SchoolCard.vue
+├── pages/
+│   └── index.vue
+├── public/
+│   ├── favicon.ico
+│   ├── img/
+│   │   └── bg-card.svg
+│   └── robots.txt
+├── server/
+│   └── tsconfig.json
+├── tokens/
+│   └── colors.js
+├── types/
+│   ├── form.ts
+│   └── school.ts
+├── nuxt.config.ts
+├── tailwind.config.js
+├── tsconfig.json
+└── package.json
+```
+
 ## Setup
 
 Make sure to install dependencies:
