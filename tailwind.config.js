@@ -1,3 +1,5 @@
+import colors from './tokens/colors.js'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,6 +10,13 @@ export default {
     './app.vue',
     './error.vue'
   ],
-  theme: {},
+  theme: {
+    extend: {
+      colors: colors,
+      fontFamily: {
+        sans: ['DM Sans', 'sans-serif'],
+      },
+    },
+  },
   plugins: [],
 }
